@@ -1,0 +1,101 @@
+<!-- created by : Imran -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imran Api</title>
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+    *{
+        margin:0;
+        padding:0;
+        box-sizing : border-box;
+    }
+    body {
+      font-family: "ubuntu", sans-serif;
+      background: #1ddaf7;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+    .chars {
+      color: #1ddaf7;
+      font-size: 0;
+      line-height: 1.5;
+    }
+
+    .words{
+      font-size: 2em;
+      color: #1ddaf7;
+      text-shadow: 0 5px 10px rgba(0, 0, 0, 0.75);
+    }
+
+    .chars span {
+      font-size: 5rem;
+      display: inline-block;
+      animation: move 3s ease-in-out infinite;
+    }
+
+    @keyframes move {
+      0% {
+        transform: translateX(-30%);
+      }
+      50% {
+         text-shadow: 0 20px 50px rgba(0, 0, 0, 0.75);
+      }
+      100% {
+        transform: translateX(30%);
+      }
+    }
+    .chars span:nth-child(2) {
+      animation-delay: 0.5s;
+    }
+    .chars span:nth-child(3) {
+      animation-delay: 1s;
+    }
+    .chars span:nth-child(4) {
+      animation-delay: 1.5s;
+    }
+    .fb{
+        height : 60px;
+        width : 100%;
+        position: absolute;
+        top: calc(80% - 80px);
+    }
+    a{
+        height : 40px;
+        width : 150px;
+        display : flex;
+        align-items : center;
+        justify-content : center;
+        background-color:teal;
+        text-decoration : none;
+        color : white;
+        border-radius: 5px;
+        position: relative;
+        top: calc(50% - 20px);
+        left: calc(50% - 75px);
+    }
+  </style>
+</head>
+<body>
+  <div class="fb">
+      <a href="https://www.facebook.com/Emranoriginal21"
+       target="_blank">Facebook Id link</a>
+  </div>
+  <span class="words">Mohammad Imran</span>
+  <div class="chars">
+    <span>I</span>
+    <span>M</span>
+    <span>R</span>
+    <span>A</span>
+    <span>N</span>
+  </div>
+  <span class="words">Video Api</span>
+</body>
+</html>
